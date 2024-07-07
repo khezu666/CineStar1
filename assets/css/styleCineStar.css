@@ -1,3 +1,7 @@
+*{
+    font-family: sans-serif;
+}
+
 body {
     background-image: url(../media/img/foto-cine.jpeg);
     background-position: center center;

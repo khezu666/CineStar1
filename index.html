@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styleCineStar.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>CineStar</title>
 </head>
 <body>
@@ -26,6 +27,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar sesión</a>
                         </li>
                         </ul>
                     </div>
@@ -62,8 +66,48 @@
             </button>
           </div>
     </div>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.js"></script>
-    <script src="./assets/js/carteleras.js"></script>
+
+    <!-- Modal iniciar sesion-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Inicia Sesión en CineStar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form id="formSesion">
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="usuarioinicio" id="usuarioinicio" placeholder="nombre@ejemplo.com">
+                <label for="usuarioinicio" class="form-label">Usuario</label>
+              </div>
+              <div class="mb-3">
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" name="contrainicio" id="contrainicio" placeholder="Password">
+                  <label for="contrainicio" class="form-label">Contraseña</label>
+              </div>
+              <span id="error"></span>
+
+              </div>
+            </div>
+            <div class="modal-footer">
+                <div id="iniciobtn" class="col-12">
+                  <div class="d-grid">
+                  <button id="iniciosesionbtn" class="btn bsb-btn-2xl btn-primary " type="submit">Iniciar sesión</button>
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal iniciar sesion -->
+  
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+  <script src="./assets/js/carteleras.js"></script>
+  <script src="./assets/js/inicioSesion.js"></script>
 </body>
 </html>
