@@ -1,0 +1,86 @@
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+.pblack{
+    color: black;
+}
+
+.psilver{
+    color: silver;
+}
+
+.littleText{
+    font-size: 14pt;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.alinearDrch{
+    float: right;
+}
+
+/*Curriculum*/
+#divHeader
+
+header{
+    background-color: #e9e8e6;
+    color: aliceblue;
+    box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.cambiarTema{
+    margin: 5px;
+    border-radius: 100%;
+    color: white;
+    background-color: aliceblue;
+    border: 1px solid gray;
+}
+
+.imgTemaLuna{
+    width: 30px;
+    height: 35px;
+}
+
+body{
+    background-color: rgb(37, 37, 37);
+}
+
+footer {
+    margin: 0, auto;
+}
+
+.footerdesign{
+    background-color: rgba(252, 250, 250, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.61);
+    border-radius: 5pt;
+}
+
+.pfooter{
+    color: black;
+    margin: 0, auto;
+    text-align: center;
+    font-family: 'Segoe UI', Verdana;
+    font-size: 16pt;
+    font-weight: 600;
+    width: 600px;
+}
+
+#logout{
+    background-color: pink;
+    color: black;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 5pt;
+}
+
+#error, #errorCorreo, #errorNombre, #errorApellido, #errorGenero, #errorNacimiento, #errorCedula, #errorUsuario, #errorHabitacion, #errorContrasena, #errorRepitContra{
+    color: red;
+    font-size: 12pt;
+    font-weight: 700;
+}

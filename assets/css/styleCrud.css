@@ -1,0 +1,32 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.noMargin{
+    margin: 0px;
+}
+
+.pblack{
+    color: black;
+}
+
+.psilver{
+    color: silver;
+}
+
+.littleText{
+    font-size: 14pt;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.alinearDrch{
+    float: right;
+}
+
+textarea{
+    resize: none;
+}

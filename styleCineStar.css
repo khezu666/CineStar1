@@ -1,0 +1,53 @@
+body {
+    background-image: url(./CineStar/assets/media/img/foto-cine.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carteleras {
+    background-color: white; 
+    width: 200px;
+    text-align: center;
+}
+
+.carteleras-img {
+    height: 300px;
+    width: 180px;
+    margin-top: 10px;
+    color: white;
+}
+
+.container-slider{
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    width:360px;
+    padding: 10px;
+}
+
+.seccion-carteleras{
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.Sinopsis{
+    display: flex;
+    column-gap: 5px;
+}
+
+.sinopsis-img{
+    margin-top:10px;
+    margin-left: 10px;
+    width: 190px;
+}
+
+.Sinopsis-Datos{
+    color: white;
+    justify-content: center;
+    margin-inline-end: 10px;
+}
+

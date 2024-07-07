@@ -1,0 +1,97 @@
+* {
+    box-sizing: content-box;
+    font-family: Calibri;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(0, 153, 255), rgb(149, 104, 255));
+}
+
+.noMargin{
+    margin: 0px;
+}
+
+.cvcontainer{
+    border: 2px solid rgb(2, 0, 92);
+    border-radius: 5pt ;
+    height: 500px;
+    width: 800px;
+    margin: 5% auto;
+    padding: 0 18px;
+    background-color: aliceblue;
+}
+.modoOscuro{
+    border: 2px solid aliceblue;
+    border-radius: 5pt ;
+    height: 500px;
+    width: 800px;
+    margin: 5% auto;
+    padding: 0 18px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.columnainfo{
+    border-right: 2px solid black;
+    width: 34%;
+    height: 100%;
+    padding: 0;
+}
+
+.columnabody{
+    width: 66%;
+    height: 100%;
+    padding: 0 4px;
+}
+
+#imagen{
+    border: 2px solid rgb(2, 0, 92);
+    border-radius: 100%;
+    margin: 10px auto ;
+    width: 60%;
+    height: 150px;
+}
+
+#personalinfo img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cambiarTema{
+    margin: 5px;
+    border-radius: 100%;
+    color: white;
+    background-color: aliceblue;
+    border: 1px solid gray;
+}
+
+.imgTemaLuna{
+    width: 20px;
+    height: 25px;
+}
+
+.oscuro{
+    color: aliceblue;
+    background-color: rgb(39, 39, 39);
+}
+
+.claro{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px black;
+}
+
+#atmosImagen{
+    width: 290px;
+    height: 120px;
+}
+
+#logout{
+    background-color: pink;
+    color: black;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 5pt;
+}
