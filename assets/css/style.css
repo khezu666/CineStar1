@@ -22,6 +22,10 @@ textarea{
     resize: none;
 }
 /* iniciar sesión y registro*/
+.bodyRegistro{
+    background-image: url("../media/img/Fondo-estrellas-rojas.jpg")
+}
+
 .containerdesign {
     margin: auto;
     background-color: rgba(255, 255, 255, 0.144);
