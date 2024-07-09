@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url(../media/img/foto-cine.jpeg);
+    background-image: url(../media/img/fondo-login.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +29,7 @@ body {
     color: white;
     width:360px;
     padding: 10px;
-    margin-left: 8.7cm;
+    margin-left: 15.5cm;
 }
 
 .seccion-carteleras{

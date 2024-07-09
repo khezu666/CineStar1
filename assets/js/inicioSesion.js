@@ -21,7 +21,7 @@ function signUp(){
     const contraReg = usuarios.find(usuarios => usuarios.contrasena === contraIngre);
 
     if(usuarioReg && contraReg){
-        window.location.href="./CV.html";
+        window.location.href="./carteleras.html";
     }
     else{
         Swal.fire({
