@@ -71,6 +71,10 @@ body.light section div h2, body.light section div h4, body.light section div p {
     padding: 4px;
 }
 
+#titulo-peliculas{
+    width: 180px;
+}
+
 .container-slider {
     margin-top: 5px;
     text-align: center;
@@ -78,6 +82,11 @@ body.light section div h2, body.light section div h4, body.light section div p {
     padding: 10px;
     color: white;
     align-items: center;
+}
+
+#img-slider{
+    width: 360px;
+    height: 500px;
 }
 
 
@@ -103,6 +112,11 @@ body.light section div h2, body.light section div h4, body.light section div p {
     color: white;
     justify-content: center;
     margin-inline-end: 10px;
+}
+
+.Sobre-Nosotros{
+    justify-content: center;
+    color: white;
 }
 
 #toggle{
