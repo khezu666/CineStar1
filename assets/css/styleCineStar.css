@@ -58,6 +58,16 @@ body.light section div h2 {
     color: white;
     border-radius: 5px;
     padding: 4px;
+    cursor: pointer;
+}
+
+.carteleras-img::hover {
+    height: 300px;
+    width: 180px;
+    margin-top: 10px;
+    color: rgba(17, 17, 17, 0.897);
+    border-radius: 5px;
+    padding: 4px;
 }
 
 .container-slider {
