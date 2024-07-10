@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styleCineStar.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>CineStar</title>
 </head>
-<body>
+<body class="light">
     <header>
         <div>
             <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
@@ -19,7 +20,7 @@
                            <span class="navbar-toggler-icon"></span>
                        </button>
                            <a class="navbar-brand" href="./index.html">CineStar</a>
-                   </div> 
+                   </div>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -34,7 +35,12 @@
                     <li class="nav-item">
                       <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar sesión</a>
                     </li>
+                    <li class="nav-item"> 
+                      <label for="toggle" id="iconito"><i class="fa-solid fa-sun"></i></label>
+                        <input type="checkbox" id="toggle" class="nav-link">
+                    </li>
                     </ul>
+                  </div>
                 </div>
               </div>
         </div>
@@ -114,6 +120,7 @@
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/carteleras.js"></script>
   <script src="./assets/js/inicioSesion.js"></script>
+  <script src="./assets/js/Modo-claro.js"></script>
 </body>
 <footer class="text-center text-lg-start" style="background-color: rgb(36, 36, 36); color: aliceblue;">
   <div class="container p-4">

@@ -10,6 +10,12 @@ body {
     background-attachment: fixed;
 }
 
+body.light {
+    background-image: url(../media/img/fondo-login-claro.jpg);
+    color: black;
+    transition: all 1.5s ease;
+}
+
 .carteleras {
     background-color: white; 
     width: 200px;
@@ -29,9 +35,9 @@ body {
 .container-slider {
     margin-top: 5px;
     text-align: center;
-    color: white;
     width:360px;
     padding: 10px;
+    color: white;
     align-items: center;
 }
 
@@ -60,3 +66,15 @@ body {
     margin-inline-end: 10px;
 }
 
+#toggle{
+    display: none;
+}
+
+#iconito{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
