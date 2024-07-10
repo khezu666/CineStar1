@@ -19,6 +19,12 @@ body {
     height: 700px;
 }
 
+#sectionCarrousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #logo-navbar{
     width: 80px;
     height: 80px;
