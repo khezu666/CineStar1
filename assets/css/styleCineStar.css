@@ -18,7 +18,7 @@ body.light {
     transition: all 1.5s ease;
 }
 
-body.light section div h2 {
+body.light section div h2, body.light section div h4, body.light section div p {
     color: black;
 }
 
