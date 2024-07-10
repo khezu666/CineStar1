@@ -102,3 +102,7 @@ body.light {
     color: white;
     cursor: pointer;
 }
+
+.filtro{
+    display: none;
+}
