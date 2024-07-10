@@ -36,7 +36,7 @@
 
 /*const busqueda = document.querySelectorAll('#peliculas')*/
 
-function buscador() {
+/*function buscador() {
   var input, filter, div, h4, i;
   input = document.getElementById("buscador");
   filter = input.value.toUpperCase();
@@ -64,3 +64,15 @@ function buscador() {
   }
 
 }
+*/
+
+document.addEventListener("keyup", (e)=>{
+  if(e.target.matches("#buscador")){
+    if(e.key === "Escape")e.target.value = ""
+    document.querySelectorAll('.pelicula').forEach(pelicula => {
+      fruta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+    ?pelicula.classList.remove('filtro')
+    :pelicula.classList.add('filtro')
+    })
+  }
+})

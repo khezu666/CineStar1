@@ -4,12 +4,17 @@ inicioSesion.addEventListener("submit", (e)=>{
     const usuario = document.querySelector('#usuarioinicio').value;
     const contrasena = document.querySelector('#contrainicio').value;
 
-    if(usuario === '' || contrasena === ''){
-        document.getElementById('error').innerHTML = 'Por favor, llene los campos.';
-        return true;
+    if(usuario === "Admin" && contrasena === "Admin1*"){
+        window.location.href = "indexAdmin.html";
     }
     else{
-        signUp();   
+        if(usuario === '' || contrasena === ''){
+        document.getElementById('error').innerHTML = 'Por favor, llene los campos.';
+        return true;
+        }
+        else{
+            signUp();   
+        }
     }
 })
 
