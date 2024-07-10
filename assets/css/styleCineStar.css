@@ -10,6 +10,23 @@ body {
     background-attachment: fixed;
 }
 
+.banner {
+    background: linear-gradient(#171C1F, #5C0005);
+}
+
+.banner div img {
+    width: 100%;
+    height: 700px;
+}
+
+#logo-navbar{
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 .carteleras {
     background-color: white; 
     width: 200px;
