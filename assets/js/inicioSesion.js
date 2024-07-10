@@ -21,11 +21,15 @@ inicioSesion.addEventListener("submit", (e)=>{
 function signUp(){
     const usuarioIngre = document.querySelector('#usuarioinicio').value;
     const contraIngre = document.querySelector('#contrainicio').value;
+
     const usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
+
     const usuarioReg = usuarios.find(usuarios => usuarios.usuario === usuarioIngre);
+    const correoReg = usuarios.find(usuarios => usuarios.correo === usuarioIngre);
+    const cedulaReg = usuarios.find(usuarios => usuarios.cedula === usuarioIngre);
     const contraReg = usuarios.find(usuarios => usuarios.contrasena === contraIngre);
 
-    if(usuarioReg && contraReg){
+    if(usuarioReg && contraReg || correoReg && contraReg || cedulaReg && contraReg){
         window.location.href="./carteleras.html";
     }
     else{
