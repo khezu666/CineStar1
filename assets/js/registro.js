@@ -15,7 +15,9 @@ registro.addEventListener("submit", (e)=>{
 
     /*Crea un JSON con el contenido en el localStorage si hay, si no, crea un array vacío*/
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-    const usuarioregistrado = usuarios.find(usuarios => usuarios.correo === correo);
+    const usuarioregistrado = usuarios.find(usuarios => usuarios.usuario === usuario);
+    const correoregistrado = usuarios.find(usuarios => usuarios.correo === correo);
+    const cedularegistrado = usuarios.find(usuarios => usuarios.cedula === cedula);
 
     /*Validaciones*/
     /*Las validaciones se manejan con regex en funciones más abajo*/
@@ -40,7 +42,7 @@ registro.addEventListener("submit", (e)=>{
     valHabitacion();
     valCorrectas();
     if(valCorrectas()){
-        if(usuarioregistrado){
+        if(usuarioregistrado || correoregistrado || cedularegistrado){
             return Swal.fire({
                 icon: "error",
                 title: "Este usuario ya esta registrado",
