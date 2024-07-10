@@ -17,6 +17,10 @@ body.light {
     transition: all 1.5s ease;
 }
 
+body.light section div h2 {
+    color: black;
+}
+
 .banner {
     background: linear-gradient(#171C1F, #5C0005);
 }
