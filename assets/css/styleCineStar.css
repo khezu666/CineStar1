@@ -10,12 +10,13 @@ body {
     background-attachment: fixed;
 }
 
-<<<<<<< HEAD
+
 body.light {
     background-image: url(../media/img/fondo-login-claro.jpg);
     color: black;
     transition: all 1.5s ease;
-=======
+}
+
 .banner {
     background: linear-gradient(#171C1F, #5C0005);
 }
@@ -37,7 +38,6 @@ body.light {
     margin: 0;
     padding: 0;
     border: 0;
->>>>>>> 16209c18b553271fa073944de3996e767cd0aa23
 }
 
 .carteleras {
