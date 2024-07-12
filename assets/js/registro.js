@@ -1,4 +1,4 @@
-const registro = document.querySelector('#formulario');
+const registro = document.querySelector('.formulario');
 registro.addEventListener("submit", (e)=>{
     e.preventDefault();
 

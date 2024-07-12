@@ -1,31 +1,21 @@
-const form = document.getElementById('CRUD');
-const nombre = document.getElementById('nombre');
-const apellido = document.getElementById('apellido');
-const genero = document.getElementById('genero');
-const fechadenacimiento = document.getElementById('fechadenacimiento');
-const correo = document.getElementById('correo');
-const usuario = document.getElementById('usuario');
-const contraseña = document.getElementById('contraseña');
-const repitecontraseña = document.getElementById('repitecontraseña');
-const cedula = document.getElementById('cedula');
-const habitacion = document.getElementById('habitacion');
-const tablacuerpo = document.getElementById('tablacuerpo');
+/*const form = document.querySelector('#CRUD');
+const tablacuerpo = document.querySelector('#tablacuerpo');
 
 let data = JSON.parse(localStorage.getItem('formData')) || [];
 
-form.addEventListener('submit', function (event) {
-    event.preventDefault();
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-    const nombre = nombre.value;
-    const apellido = apellido.value;
-    const genero = genero.value;
-    const fechadenacimiento = fechadenacimiento.value;
-    const correo = correo.value;
-    const usuario = usuario.value;
-    const contraseña = contraseña.value;
-    const repitecontraseña = repitecontraseña.value;
-    const cedula = cedula.value;
-    const habitacion = habitacion.value;
+    const nombre = document.querySelector('#nombre').value;
+    const apellido = document.querySelector('#apellido').value;
+    const genero = document.querySelector('#genero').value;
+    const fechadenacimiento = document.querySelector('#fecnacimiento').value;
+    const correo = document.querySelector('#correo').value;
+    const usuario = document.querySelector('#usuario').value;
+    const contraseña = document.querySelector('#contrasena').value;
+    const repitecontraseña = document.querySelector('#repitecontrasena').value;
+    const cedula = document.querySelector('#cedula').value;
+    const habitacion = document.querySelector('#habitacion').value;
 
     if(nombre && apellido && genero && fechadenacimiento && correo && usuario && contraseña && repitecontraseña && cedula && habitacion) {
         const newdata = {nombre,apellido,genero,fechadenacimiento,correo,usuario,contraseña,repitecontraseña,cedula,habitacion};
@@ -92,3 +82,16 @@ function renderTable() {
 }
 
 renderTable();
+*/
+const listUsers = async() => {
+    try{
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const data=response.json();
+    }catch{ex}{
+        alert(ex)
+    }
+}
+
+window.addEventListener("load", async() => {
+await listUsers();
+});
