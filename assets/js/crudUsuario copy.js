@@ -1,42 +1,94 @@
-/*
-const formulario = document.querySelector('.crud');
-const nombreInput = document.querySelector('#nombre')
-const tabla =  document.querySelector(".tabla")
+const form = document.getElementById('CRUD');
+const nombre = document.getElementById('nombre');
+const apellido = document.getElementById('apellido');
+const genero = document.getElementById('genero');
+const fechadenacimiento = document.getElementById('fechadenacimiento');
+const correo = document.getElementById('correo');
+const usuario = document.getElementById('usuario');
+const contraseña = document.getElementById('contraseña');
+const repitecontraseña = document.getElementById('repitecontraseña');
+const cedula = document.getElementById('cedula');
+const habitacion = document.getElementById('habitacion');
+const tablacuerpo = document.getElementById('tablacuerpo');
 
-let data = JSON.parse(localStorage.getItem("usuarios")) || [];
+let data = JSON.parse(localStorage.getItem('formData')) || [];
 
-formulario.addEventListener("submit", (e)=>{
-    e.preventDefault();
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-     const nombre = nombreInput.value;
+    const nombre = nombre.value;
+    const apellido = apellido.value;
+    const genero = genero.value;
+    const fechadenacimiento = fechadenacimiento.value;
+    const correo = correo.value;
+    const usuario = usuario.value;
+    const contraseña = contraseña.value;
+    const repitecontraseña = repitecontraseña.value;
+    const cedula = cedula.value;
+    const habitacion = habitacion.value;
 
-     if(nombre){
-         const newData = (nombre);
-         data.push(newData);
-         guardarDatos();
-         actualizarTabla();
-         formulario.reset();
-     }
+    if(nombre && apellido && genero && fechadenacimiento && correo && usuario && contraseña && repitecontraseña && cedula && habitacion) {
+        const newdata = {nombre,apellido,genero,fechadenacimiento,correo,usuario,contraseña,repitecontraseña,cedula,habitacion};
+        data.push(newdata);
+        saveDataToLocalStorage();
+        renderTable();
+        form.reset();
+    }
 })
 
-function guardarDatos(){
-    localStorage.setItem("usuarios",JSON.stringify(data));
+function saveDataToLocalStorage() {
+    localStorage.setItem('formData',JSON.stringify(data))
 }
 
-function actualizarTabla(){
-    tabla.innerHTML =  ''
-
-    data.forEach(function (item, index){
+function renderTable() {
+    tablacuerpo.innerHTML = '';
+    
+    data.forEach(function(item, index){
         const row = document.createElement('tr');
-        const nombreCelda = document.createElement('td');
+        const nombreCell = createElement('td');
+        const apellidoCell = createElement('td');
+        const generoCell = createElement('td');
+        const fechadenacimientoCell = createElement('td');
+        const correoCell = createElement('td');
+        const usuarioCell = createElement('td');
+        const contraseñaCell = createElement('td');
+        const repitecontraseñaCell = createElement('td');
+        const cedulaCell = createElement('td');
+        const habitacionCell = createElement('td');
+        const editButton = document.createElement('button');
+        const deleteButton = document.createElement('button');
 
-        nombreCelda = item.nombre;
+        nombreCell.textContent = item.nombre;
+        apellidoCell.textContent = item.apellido;
+        generoCell.textContent = item.genero;
+        fechadenacimientoCell.textContent = item.fechadenacimiento;
+        correoCell.textContent = item.correo;
+        usuarioCell.textContent = item.usuario;
+        contraseñaCell.textContent = item.contraseña;
+        repitecontraseñaCell.textContent = item.repitecontraseña;
+        cedulaCell.textContent = item.cedula;
+        habitacionCell.textContent = item.habitacion;
+        editButton.textContent = 'Edit';
+        deleteButton.textContent = 'Delete'
 
-        row.appendChild(nombreCelda);
+        actionCell.appendChild(editButton);
+        actionCell.appendChild(deleteButton);
 
-        tabla.appendChild(row);
-    });
+        row.appendChild(nombreCell)
+        row.appendChild(apellidoCell)
+        row.appendChild(generoCell)
+        row.appendChild(fechadenacimientoCell)
+        row.appendChild(correoCell)
+        row.appendChild(usuarioCell)
+        row.appendChild(contraseñaCell)
+        row.appendChild(repitecontraseñaCell)
+        row.appendChild(cedulaCell)
+        row.appendChild(habitacionCell)
+        row.appendChild(actionCell)
+
+        tablacuerpo.appendChild(row);
+    })
+
 }
-*/
 
-const BD = localStorage.getItem(usuarios)
+renderTable();

@@ -23,7 +23,7 @@
         </div>
         <div class="modal-body">
         <!-- Formulario -->
-        <form>
+        <form id="CRUD">
             <div class="row">
                 <div class="col-6">
                 <div class="mb-3">
@@ -56,7 +56,7 @@
                 <div class="col-6">
                 <div class="mb-3">
                 <label for="fecnacimiento" id="fecnacimiento-label" class="form-label"><p class="noMargin">Fecha de nacimiento:</p></label>
-                <input type="date" name="fecnacimiento" class="form-control" id="fecnacimiento" placeholder="Fecha de nacimiento">
+                <input type="date" name="fecnacimiento" class="form-control" id="fechadenacimiento" placeholder="Fecha de nacimiento">
                 </div>
                 </div>
             </div>
@@ -81,14 +81,14 @@
                 <div class="col-6">
                 <div class="mb-3">
                 <label for="contrasena" id="contrasena-label" class="form-label"><p class="noMargin">Contraseña:</p></label>
-                <input type="password" name="contrasena" class="form-control" id="contrasena" placeholder="Ingrese su Contraseña" minlength="8">
+                <input type="password" name="contrasena" class="form-control" id="contraseña" placeholder="Ingrese su Contraseña" minlength="8">
                 </div>
                 </div>
 
                 <div class="col-6">
                 <div class="mb-3">
                 <label for="repitecontrasena" id="repitecontrasena-label" class="form-label"><p class="noMargin">Repite la contraseña:</p></label>
-                <input type="password" name="repitecontrasena" class="form-control" id="repitecontrasena" minlength="8" placeholder="Repita su contraseña">
+                <input type="password" name="repitecontrasena" class="form-control" id="repitecontraseña" minlength="8" placeholder="Repita su contraseña">
                 </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                 </div>
             </div>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary" id="submitButton">Enviar</button>
         </form>
         <table class="table mb-3">
             <thead>
@@ -126,7 +126,7 @@
                     <th scope="col" colspan="2">Acción</th>
                 </tr>
             </thead>
-            <tbody class="tabla">
+            <tbody class="tabla" id="tablacuerpo">
             </tbody>
         </table>
         </div>
@@ -140,6 +140,5 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/crudUsuario copy.js"></script>
-    <script src="./assets/js/registro.js"></script>
 </body>
 </html>

@@ -50,6 +50,8 @@ body.light section div h2, body.light section div h4, body.light section div p {
     width: 200px;
     text-align: center;
     border-radius: 5px;
+    display: inline-block;
+    margin: 20px 15px;
 }
 
 .carteleras-img {
