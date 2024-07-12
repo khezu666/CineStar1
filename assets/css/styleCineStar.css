@@ -148,3 +148,9 @@ body.light div.row h4 a, body.light header div nav.bar{
 .filtro{
     display: none;
 }
+
+#buscador{
+    color: white;
+    margin-left: 300px;
+    border: solid white 2px;
+}
