@@ -14,8 +14,7 @@ toggle.addEventListener('change',(event)=>{
         localStorage.setItem('light-mode', 'true');
     }else {
         localStorage.setItem('light-mode', 'false');
-    }
-
+    }   
 });
 
 // obtenemos el modo actual.
@@ -24,3 +23,4 @@ if(localStorage.getItem('light-mode') === 'true'){
 } else {
     document.body.classList.remove('light');
 }
+
