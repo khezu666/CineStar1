@@ -154,9 +154,11 @@ body.light div.row h4 a, body.light header div nav.bar{
     margin-left: 200px;
     border: solid white 2px;
     border-radius: 5px;
+
 }
 
-#categorias{
-    margin-left: 10px;
+.categorias{
     border: solid white 2px;
 }
+
+
