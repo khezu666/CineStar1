@@ -28,9 +28,18 @@ body.light div.row div.carteleras, body.light div.row h4 a{
 
 }
 
+body.light p, body.light h5{
+
+    color: black;
+}
+
 body.light div.row h4 a, body.light header div nav.bar{
     background-color: white;
     color: black;
+}
+
+body p, body h5{
+    color: white;
 }
 
 .banner {
