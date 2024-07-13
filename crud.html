@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/datatables.css">
+    <link rel="stylesheet" href="./assets/css/styleCrud.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/> 
     <title>Crud</title>
 </head>
 <body>
     <div class="container my-4">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <table class="table">
+                <table id="datatable-users" class="table table-striped">
                     <thead>
                         <tr>
-                            <th></th>
+                            <th class="centered">#</th>
+                            <th class="centered">Name</th>
+                            <th class="centered">Email</th>
+                            <th class="centered">City</th>
+                            <th class="centered">Company</th>
+                            <th class="centered">Status</th>
+                            <th class="centered">Options</th>
                         </tr>
                     </thead>
+                    <tbody id="tableBody_users"></tbody>
                 </table>
             </div>
         </div>
