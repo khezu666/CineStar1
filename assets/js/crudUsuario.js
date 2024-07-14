@@ -1,8 +1,5 @@
-/*const form = document.querySelector('#CRUD');
-const tablacuerpo = document.querySelector('#tablacuerpo');
-
-let data = JSON.parse(localStorage.getItem('formData')) || [];
-
+let data = JSON.parse(localStorage.getItem('usuarios')) || [];
+/*
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -84,12 +81,13 @@ function renderTable() {
 renderTable();
 */
 let dataTable;
-let dataTableIsInitialized=false
+let dataTableIsInitialized=false;
 
 const dataTableOptions={
     lengthMenu:[5,10,15,20],
     columnDefs:[
         {className:"centered",targets:[0,1,2,3,4,5,6]},
+        {className:"light",targets:[0,1,2,3,4,5,6]},
         {orderable:false, targets:[5,6]},
         {width: "5%", targets:[0]}
     ],
