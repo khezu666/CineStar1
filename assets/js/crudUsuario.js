@@ -58,7 +58,7 @@ const listUsers = async () => {
                 <td>${user.genero}</td>
                 <td>${user.fecnacimiento}</td>
                 <td>${user.habitacion}</td>
-                <td><button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button><button class="btn btn-sm btn-danger" onclick="borrarGift(${user.id})"><i class="fa-solid fa-trash"></i></button></td>
+                <td><button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button><button class="btn btn-sm btn-danger" onclick="borrar(${user.id})"><i class="fa-solid fa-trash"></i></button></td>
             </tr>`;
         });
         const usuarios = document.querySelector('#tableBody_users')
@@ -68,12 +68,25 @@ const listUsers = async () => {
     }
 };
 
-window.borrarGift = (id) => {
+window.borrar = (id) => {
     let datos = JSON.parse(localStorage.getItem('usuarios')) || [];
     let index = datos.findIndex((user) => user.id == id);
 
     let validar = confirm(
-    `Está seguro/a que quiere eliminar la gift card ${datos[index].gift}?`);
+        Swal.fire({
+            title: '¿Está seguro/a que quiere eliminar el usuario ${datos[index].usuario}?',
+            showDenyButton: true,
+            confirmButtonText: "Eliminar",
+            denyButtonText: 'Cancelar'
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            Swal.fire("Usuario Borrado", "", "Proceso exitoso");
+        } else if (result.isDenied) {
+            Swal.fire("Cancelado", "", "");
+        }
+        })
+    );
 
     if (validar) {
     datos.splice(index, 1);

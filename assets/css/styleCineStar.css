@@ -64,15 +64,9 @@ body.light main header div nav.navbar label#iconito{
 
 body.light main header div input#buscador{
     color: black !important;
-    margin: auto;
     border: solid black 2px;
     border-radius: 5px;
-}
-
-.derecha{
-    display: flex;
-    justify-content: end;
-    align-items: end;
+    margin-left: 300px;
 }
 
 .banner {
@@ -208,7 +202,7 @@ body.light main header div img#logo-navbar{
 
 #buscador{
     color: white;
-    margin: auto;
+    margin-left: 300px;
     border: solid white 2px;
     border-radius: 5px;
 
