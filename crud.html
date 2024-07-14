@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/datatables.css">
     <link rel="stylesheet" href="./assets/css/styleCrud.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/> 
     <title>Crud</title>
 </head>
@@ -20,6 +21,7 @@
             <div class="mb-3">
             <label for="nombre" id="nombre-label" class="form-label"><p class="noMargin">Nombre:</p></label>
             <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+            <span id="errorNombre"></span>
             </div>
             </div>
 
@@ -27,6 +29,7 @@
             <div class="mb-3">
             <label for="apellido" id="apellido-label" class="form-label"><p class="noMargin">Apellido:</p></label>
             <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Ingrese su Apellido">
+            <span id="errorApellido"></span>
             </div>
             </div>
         </div>
@@ -41,6 +44,7 @@
                 <option value="Femenino">Femenino</option>
                 <option value="Otro">Otro</option>
             </select>
+            <span id="errorGenero"></span>
             </div>
             </div>
 
@@ -48,6 +52,7 @@
             <div class="mb-3">
             <label for="fecnacimiento" id="fecnacimiento-label" class="form-label"><p class="noMargin">Fecha de nacimiento:</p></label>
             <input type="date" name="fecnacimiento" class="form-control" id="fecnacimiento" placeholder="Fecha de nacimiento">
+            <span id="errorNacimiento"></span>
             </div>
             </div>
         </div>
@@ -57,6 +62,7 @@
             <div class="mb-3">
             <label for="correo" id="correo-label" class="form-label"><p class="noMargin">Correo electrónico:</p></label>
             <input type="email" name="correo" class="form-control" id="correo" placeholder="Ingrese su correo">
+            <span id="errorCorreo"></span>
             </div>
             </div>
 
@@ -64,6 +70,7 @@
             <div class="mb-3">
             <label for="usuario" id="usuario-label" class="form-label"><p class="noMargin">Usuario:</p></label>
             <input type="text" name="apellido" class="form-control" id="usuario" placeholder="Cree un usuario">
+            <span id="errorUsuario"></span>
             </div>
             </div>
         </div>
@@ -73,6 +80,7 @@
             <div class="mb-3">
             <label for="contrasena" id="contrasena-label" class="form-label"><p class="noMargin">Contraseña:</p></label>
             <input type="password" name="contrasena" class="form-control" id="contrasena" placeholder="Ingrese su Contraseña" minlength="8">
+            <span id="errorContrasena"></span>
             </div>
             </div>
 
@@ -80,6 +88,7 @@
             <div class="mb-3">
             <label for="repitecontrasena" id="repitecontrasena-label" class="form-label"><p class="noMargin">Repite la contraseña:</p></label>
             <input type="password" name="repitecontrasena" class="form-control" id="repitecontrasena" minlength="8" placeholder="Repita su contraseña">
+            <span id="errorRepitContra"></span>
             </div>
             </div>
         </div>
@@ -89,6 +98,7 @@
             <div class="mb-3">
             <label for="cedula" id="cedula-label" class="form-label"><p class="noMargin">Cédula:</p></label>
             <input type="number" name="cedula" class="form-control" id="cedula" placeholder="Ingrese su C.I.">
+            <span id="errorCedula"></span>
             </div>
             </div>
 
@@ -96,13 +106,17 @@
             <div class="mb-3">
             <label for="habitacion" id="habitacion-label" class="form-label"><p class="noMargin">Dirección:</p></label>
             <textarea class="form-control" id="habitacion" placeholder="Ciudad, Avenida, Calle..." name="habitacion" required maxlength="200"></textarea>
+            <span id="errorHabitacion"></span>
             </div>
             </div>
         </div>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="submit" class="btn btn-primary" id="submitButton">Enviar</button>
+
+        <span id="error"></span>
+        <button type="submit" id="registro" class="btn btn-primary" form="CRUD" >Registrar</button>
     </form>
+
     <hr>
+    
     <div class="container my-4">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -123,11 +137,36 @@
             </div>
         </div>
     </div>
-
+    <footer class="text-center text-lg-start" style="background-color: rgb(36, 36, 36); color: aliceblue;">
+        <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 align="center" class="text-uppercase">Página Web: proyecto CineStar</h5>
+            <p align="justify">
+                Página hecha en el 3er Semestre de Informática seccion B 2024.
+            </p>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0" align="center">
+                <img src="./assets/media/img/Fe y alegria.jpeg" width="200px" alt="...">
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 align="center" class="text-uppercase">Programadores</h5>
+            <p align="justify">
+                Los programadores de esta página web fueron los alumnos Anderson Abreu y Diego Flores
+            </p>
+            </div>
+        </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright: Anderson Abreu & Diego Flores
+        </div>
+    </footer>
     <script src="./assets/js/jquery3.7.1.min.js"></script>
     <script src="./assets/js/datatables.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/crudUsuario.js"></script>
     <script src="./assets/js/Modo-claro.js"></script>
+    <script src="./assets/js/registro.js"></script>
+    <script src="./assets/js/sweetAlert.js"></script>
 </body>
 </html>

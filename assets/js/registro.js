@@ -50,18 +50,42 @@ registro.addEventListener("submit", (e)=>{
             }); 
         }
         else{
-            usuarios.push({nombre:nombre, apellido:apellido, genero:genero, fecnacimiento:fecnacimiento, correo:correo, usuario:usuario, cedula:cedula, contrasena:contrasena, habitacion:habitacion});
-            localStorage.setItem("usuarios", JSON.stringify(usuarios));
-            Swal.fire({
-                icon: "success",
-                title: "Usuario registrado correctamente",
-                timer: 3000,
-            }); 
-            window.location.href="./index.html";
+            const crud = document.querySelector('title')
+            if(crud.value === 'Crud'){
+                registroCrud();
+            }
+            else{
+            registroUsuarios();
+            }
         }
     }
 }
 })
+
+/**/
+function registroUsuarios(){
+    usuarios.push({nombre:nombre, apellido:apellido, genero:genero, fecnacimiento:fecnacimiento, correo:correo, usuario:usuario, cedula:cedula, contrasena:contrasena, habitacion:habitacion});
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        Swal.fire({
+            icon: "success",
+            title: "Usuario registrado correctamente",
+            timer: 3000,
+        }); 
+        window.location.href="./index.html";
+}
+
+function registroCrud(){
+    usuarios.push({nombre:nombre, apellido:apellido, genero:genero, fecnacimiento:fecnacimiento, correo:correo, usuario:usuario, cedula:cedula, contrasena:contrasena, habitacion:habitacion});
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        Swal.fire({
+            icon: "success",
+            title: "Usuario registrado correctamente",
+            timer: 3000,
+        }); 
+        window.location.reload(); ;
+}
+/**/
+
 
 /*Validaciones de registro*/ 
 
