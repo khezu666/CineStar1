@@ -62,6 +62,18 @@ body.light main header div nav.navbar label#iconito{
     color: black !important;
 }
 
+body.light main header div input#buscador{
+    color: black !important;
+    margin: auto;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+
+main header div ul li label#buscador-label{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
 
 .banner {
     background: linear-gradient(#171C1F, #5C0005);
@@ -196,7 +208,7 @@ body.light main header div img#logo-navbar{
 
 #buscador{
     color: white;
-    margin-left: 200px;
+    margin: auto;
     border: solid white 2px;
     border-radius: 5px;
 

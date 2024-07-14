@@ -59,9 +59,9 @@ registro.addEventListener("submit", (e)=>{
                 timer: 3000,
             });
             if(document.querySelector("title") == Crud){
-                window.location.href="./crud.html";
+                window.location.href="crud.html";
             } else{
-                window.location.href="./index.html";
+                window.location.href="index.html";
             }
             }
         }
