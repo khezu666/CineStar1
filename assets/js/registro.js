@@ -15,6 +15,7 @@ registro.addEventListener("submit", (e)=>{
 
     /*Crea un JSON con el contenido en el localStorage si hay, si no, crea un array vacío*/
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
     const usuarioregistrado = usuarios.find(usuarios => usuarios.usuario === usuario);
     const correoregistrado = usuarios.find(usuarios => usuarios.correo === correo);
     const cedularegistrado = usuarios.find(usuarios => usuarios.cedula === cedula);
@@ -50,42 +51,22 @@ registro.addEventListener("submit", (e)=>{
             }); 
         }
         else{
-            const crud = document.querySelector('#CRUD')
-            if(crud === 'Crud'){
-                registroCrud();
+            usuarios.push({nombre:nombre, apellido:apellido, genero:genero, fecnacimiento:fecnacimiento, correo:correo, usuario:usuario, cedula:cedula, contrasena:contrasena, habitacion:habitacion});
+            localStorage.setItem("usuarios", JSON.stringify(usuarios));
+            Swal.fire({
+                icon: "success",
+                title: "Usuario registrado correctamente",
+                timer: 3000,
+            });
+            if(document.querySelector("title") == Crud){
+                window.location.href="./crud.html";
+            } else{
+                window.location.href="./index.html";
             }
-            else{
-                registroUsuarios();
             }
         }
     }
-}
 })
-
-/**/
-function registroUsuarios(){
-    usuarios.push({nombre:nombre, apellido:apellido, genero:genero, fecnacimiento:fecnacimiento, correo:correo, usuario:usuario, cedula:cedula, contrasena:contrasena, habitacion:habitacion});
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        Swal.fire({
-            icon: "success",
-            title: "Usuario registrado correctamente",
-            timer: 3000,
-        }); 
-        window.location.href="./index.html";
-}
-
-function registroCrud(){
-    usuarios.push({nombre:nombre, apellido:apellido, genero:genero, fecnacimiento:fecnacimiento, correo:correo, usuario:usuario, cedula:cedula, contrasena:contrasena, habitacion:habitacion});
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        Swal.fire({
-            icon: "success",
-            title: "Usuario registrado correctamente",
-            timer: 3000,
-        }); 
-        window.location.reload(); ;
-}
-/**/
-
 
 /*Validaciones de registro*/ 
 

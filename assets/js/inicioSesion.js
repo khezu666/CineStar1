@@ -9,7 +9,7 @@ inicioSesion.addEventListener("submit", (e)=>{
     }
     else{
         if(usuario === '' || contrasena === ''){
-        document.getElementById('error').innerHTML = 'Por favor, llene los campos.';
+        document.querySelector('#error').innerHTML = 'Por favor, llene los campos.';
         return true;
         }
         else{
