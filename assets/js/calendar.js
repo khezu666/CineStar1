@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let request_calendar = "../assets/json/events.json";
+    /*let request_calendar = "./assets/json/events.json";*/
 
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'dayGridMonth',
     events: function(info, successCallback, failureCallback) {
-        fetch(request_calendar)
+        fetch("./assets/json/events.json")
         .then(response => response.json())
         .then(data => {
             let events = data.events.map(event => ({

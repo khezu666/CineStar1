@@ -64,9 +64,23 @@ body.light main header div nav.navbar label#iconito{
 
 body.light main header div input#buscador{
     color: black !important;
+    margin: auto;
     border: solid black 2px;
     border-radius: 5px;
-    margin-left: 300px;
+}
+
+body.light div.calendario{
+    background-color:black;
+    color:white;
+    width: 500px;
+    margin: auto;
+    top: 20px;
+}
+
+.derecha{
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
 
 .banner {
@@ -202,7 +216,7 @@ body.light main header div img#logo-navbar{
 
 #buscador{
     color: white;
-    margin-left: 300px;
+    margin: auto;
     border: solid white 2px;
     border-radius: 5px;
 
