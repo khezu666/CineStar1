@@ -157,6 +157,35 @@ body.light div.row h4 a, body.light header div nav.bar{
 
 }
 
+.info{
+    display: flex;
+    flex-wrap:wrap;
+    columns: wrap;
+}
+
+.links-info{
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    columns: wrap;
+}
+
+.seccion-sobrenosotros{
+    background-color: white;
+    display: flex;
+    color: black;
+}
+
+#linksss{
+    margin-top: 2px;
+    margin-right: 10cm;
+}
+
+.infosper{
+    color: black;
+    margin-right:;
+}
+
 .categorias{
     border: solid white 2px;
 }
