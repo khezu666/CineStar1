@@ -273,6 +273,14 @@ body.light main header div img#logo-navbar{
 
 }
 
+.img-info-others{
+    width: 200px;
+    height: 250px;
+    border-radius: 80px;
+    border: solid 2px black;
+    margin-left: 140px;
+}
+
 .infosper{
     color: black;
 }
