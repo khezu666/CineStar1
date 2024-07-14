@@ -69,7 +69,7 @@ body.light main header div input#buscador{
     border-radius: 5px;
 }
 
-main header div ul li label#buscador-label{
+.derecha{
     display: flex;
     justify-content: end;
     align-items: end;
