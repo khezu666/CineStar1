@@ -8,7 +8,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    transition: all 1.5s ease;
+    transition: all 0.5s ease;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -23,7 +23,7 @@ body.light{
 }
 body.light, body.light section div h2, body.light section div h4, body.light section div p {
     color: black;
-    transition: all 1.5s ease;
+    transition: all 0.5s ease;
 }
 
 body.light div.row div.carteleras, body.light div.row h4 a{
@@ -86,9 +86,24 @@ body.light main header div nav.navbar label#iconito{
     border: 0;
 }
 
+body.light main header div img#logo-navbar{
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #212529;
+    border-radius: 100%;
+    padding: -5px;
+}
+
 .carteleras{
     background-color: rgb(255, 235, 235); 
+    max-width: 240px;
+    min-width: 220px;
     width: 200px;
+    max-height: 380px;
+    min-height: 356px;
     text-align: center;
     border-radius: 5px;
     display: inline-block;
