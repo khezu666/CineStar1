@@ -188,6 +188,7 @@ body p, body h5{
 .Contenedor-sobrenosotros{
     background-color: white;
     border: solid 3px black;
+    border-radius: 10px;
     margin-top: 10px;
 } 
 
@@ -206,6 +207,7 @@ body p, body h5{
     justify-content: center;
     text-align: center;
     align-content: center;
+    border: solid 2px black;
 }
 
 .texto{
@@ -213,10 +215,11 @@ body p, body h5{
 }
 
 .img-info{
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 250px;
     border-radius: 80px;
     border: solid 2px black;
+    margin-left: 55px;
 
 }
 
