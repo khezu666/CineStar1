@@ -236,5 +236,12 @@ footer{
     bottom: 0;
 }
 
+.calendario{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    top: 20px;
+}
+
 
 
