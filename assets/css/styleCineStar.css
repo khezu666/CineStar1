@@ -211,6 +211,11 @@ body p, body h5{
     height: 180px;
     border-radius: 80px;
     border: solid 2px black;
+
+}
+
+.infosper{
+    color: black;
 }
 
 .categorias{
