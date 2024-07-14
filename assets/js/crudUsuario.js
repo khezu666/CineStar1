@@ -1,6 +1,6 @@
 let data = JSON.parse(localStorage.getItem('usuarios')) || [];
 console.log(data)
-/*
+
 let dataTable;
 let dataTableIsInitialized=false;
 
@@ -69,4 +69,3 @@ const listUsers = async () => {
 window.addEventListener("load", async () => {
 await initDatatable();  
 });
-*/

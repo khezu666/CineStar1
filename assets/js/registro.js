@@ -50,12 +50,12 @@ registro.addEventListener("submit", (e)=>{
             }); 
         }
         else{
-            const crud = document.querySelector('title')
-            if(crud.value === 'Crud'){
+            const crud = document.querySelector('#CRUD')
+            if(crud === 'Crud'){
                 registroCrud();
             }
             else{
-            registroUsuarios();
+                registroUsuarios();
             }
         }
     }
