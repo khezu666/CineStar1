@@ -77,6 +77,42 @@ body.light div.calendario{
     top: 20px;
 }
 
+body.light img.img-info{
+    width: 200px;
+    height: 250px;
+    border-radius: 80px;
+    border: solid 2px white;
+    margin-left: 55px;
+}
+
+body.light .img-info-others{
+    width: 200px;
+    height: 250px;
+    border-radius: 80px;
+    border: solid 2px white;
+    margin-left: 140px;
+}
+
+
+body.light div.Contenedor-sobrenosotros{
+    background-color: black;
+    border: solid 3px white;
+    color: white;
+}
+
+body.light p.texto{
+    color: white;
+}
+
+body.light ul.texto{
+    color: white;
+}
+
+body.light h4.titulos-sobrenosotros{
+    background-color: black;
+    border: solid 3px white;
+}
+
 .derecha{
     display: flex;
     justify-content: end;
