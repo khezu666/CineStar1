@@ -286,7 +286,7 @@ body.light main header div img#logo-navbar{
 .CartasSobrenosotros{
     display: flex;
     flex-wrap: wrap;
-   column-gap: 5px;
+    column-gap: 5px;
 }
 
 .titulos-sobrenosotros{
