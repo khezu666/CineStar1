@@ -32,7 +32,7 @@ body.light div.row div.carteleras, body.light div.row h4 a{
 
 }
 
-body.light div.row h4 a, body.light header div nav.bar{
+body.light div.row h4 a, body.light header div nav.navbar{
     background-color: rgb(255, 235, 235);
     color: rgb(41, 19, 19);
 }
@@ -94,10 +94,10 @@ body.light .img-info-others{
 }
 
 
-body.light div.Contenedor-sobrenosotros{
-    background-color: black;
-    border: solid 3px white;
-    color: white;
+body.light div.Contenedor-sobrenosotros, body.light div.Contenedor-sobrenosotros nav, body.light div.Contenedor-sobrenosotros nav ul li a{
+    background-color: black !important;
+    border: solid 3px white !important;
+    color: white !important;
 }
 
 body.light p.texto{
@@ -275,7 +275,8 @@ body.light main header div img#logo-navbar{
     background-color: white;
     border: solid 3px black;
     border-radius: 10px;
-    margin-top: 10px;
+    margin: 20px auto;
+
 } 
 
 .SobreNosotros{
